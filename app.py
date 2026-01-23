@@ -8,7 +8,13 @@ def hola_mundo():
 # Lo que se devuelve aquí se mostrará en el navegador
     return '¡Hola! Mi pipeline de DevOps funciona correctamente.'
 
+# Define otra ruta (URL) para "/desarrollo"
+@app.route('/desarrollo')
+def desarrollo():
+    return '¡Bienvenido al desarrollo!'
 
+
+# Define otra ruta (URL) para "/adios"
 @app.route('/adios')
 def adios():
     return '¡Adios! Gracias por visitar mi aplicacion.'
